@@ -1,5 +1,5 @@
-import { Tag } from "./tag";
 import type { TagDto } from "../blog-client";
+import { Tag } from "./tag";
 
 type Props = {
   tags: TagDto[];

@@ -1,5 +1,5 @@
-import { type CommentDto } from "../models/comment";
 import type { PropsWithChildren } from "react";
+import { type CommentDto } from "../models/comment";
 import { Skeleton } from "@/components/ui/skeleton";
 import { MuteText } from "@/components/MuteText";
 import { DateDistance } from "@/components/DateDistance";

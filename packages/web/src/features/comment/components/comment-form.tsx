@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 
-const FormSchema = z.object({
+const formSchema = z.object({
   name: z
     .string()
     .min(1, "名前は必須です。")
@@ -27,7 +27,7 @@ const FormSchema = z.object({
     .min(1, "本文は必須です。")
     .max(1024, "本文は1024文字以内にしてください。"),
 });
-type FormSchema = z.infer<typeof FormSchema>;
+type FormSchema = z.infer<typeof formSchema>;
 
 type Props = {
   slug: string;
@@ -35,7 +35,7 @@ type Props = {
 export function CommentForm({ slug }: Props) {
   const commentPost = useCommentPost(slug);
   const form = useForm<FormSchema>({
-    resolver: zodResolver(FormSchema),
+    resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       text: "",

@@ -21,27 +21,28 @@ const titleInHead = title ? `${title} - ${TITLE}` : TITLE;
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-DV9Z5XM82F"
       type="text/partytown"></script>
-    <script type="text/partytown">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-DV9Z5XM82F");
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Web エンジニアの Tec 系とかその他日常とかのブログです"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{titleInHead}</title>
   </head>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-DV9Z5XM82F");
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="Web エンジニアの Tec 系とかその他日常とかのブログです"
+  />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="generator" content={Astro.generator} />
+  <title>{titleInHead}</title>
+
   <body class="flex flex-col items-center">
     <div
       class="grid w-full max-w-5xl grid-cols-1 gap-4 p-2 md:grid-cols-4 md:p-4"

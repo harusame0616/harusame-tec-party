@@ -1,4 +1,4 @@
-import { type CommentDto } from "../models/comment";
+import type { CommentDto } from "../models/comment";
 import { CommentListItem } from "./comment-list-item";
 
 type Props =
