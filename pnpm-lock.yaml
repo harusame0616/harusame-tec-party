@@ -13,9 +13,6 @@ importers:
       valibot:
         specifier: 1.0.0-beta.14
         version: 1.0.0-beta.14(typescript@5.5.2)
-      zod:
-        specifier: 3.23.8
-        version: 3.23.8
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
